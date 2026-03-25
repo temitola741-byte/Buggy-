@@ -26,12 +26,35 @@ void setup() {
   //Servo pin 
   pinMode(servocontr, OUTPUT);
 
+  analogWrite(ENA, 150); //Set left motor speed to 200
+  analogWrite(ENB, 150); // Set right motor speed to 200
+
+
 };
 
 
 void loop() {
-analogWrite(ENA, 150); //Set left motor speed to 200
-analogWrite(ENB, 150); // Set right motor speed to 200
-
 
 }
+//moving right:
+digitalWrite(IN1, HIGH);
+digitalWrite(IN2, LOW);
+digitalWrite(IN3,LOW);
+digitalWrite(IN4,HIGH );
+analogwrite()
+
+//moving left:
+digitalWrite(IN1, LOW);
+digitalWrite(IN2, HIGH);
+digitalWrite(IN3,HIGH);
+digitalWrite(IN4,LOW);
+
+//moving straight:
+digitalWrite(IN1, HIGH);
+digitalWrite(IN2, LOW);
+digitalWrite(IN3,HIGH);
+digitalWrite(IN4,LOW );
+
+
+
+
